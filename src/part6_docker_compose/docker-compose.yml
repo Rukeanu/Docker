@@ -1,0 +1,9 @@
+version: '3'
+services:
+  server:
+    build: ../part5_dockle
+    user: nginx
+  proxy:
+    build: .
+    ports:
+      - 80:8080
